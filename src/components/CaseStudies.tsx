@@ -25,8 +25,6 @@ const cases = [
   },
 ];
 
-<<<<<<< HEAD
-=======
 const testimonials = [
   {
     name: "Raul Mart.",
@@ -99,8 +97,6 @@ const testimonials = [
       "Mejoramos imagen digital y recibimos más consultas gracias a la automatización. La web quedó profesional y el seguimiento es constante. Grandes resultados.",
   },
 ];
-
->>>>>>> 560454f (feat: testimonios, webhook en contacto y reseñas, chatbot IA n8n + UI/UX chat)
 const CaseStudies = () => {
   return (
     <section id="casos" className="py-24 relative overflow-hidden">
@@ -158,9 +154,7 @@ const CaseStudies = () => {
             />
           </div>
         </div>
-<<<<<<< HEAD
-=======
-          
+
           <div className="mt-20">
             <h3 className="text-2xl font-bold mb-6 text-center">Opiniones de nuestros clientes</h3>
             <div className="grid gap-6 md:grid-cols-2">
@@ -179,8 +173,6 @@ const CaseStudies = () => {
               ))}
             </div>
           </div>
-
->>>>>>> 560454f (feat: testimonios, webhook en contacto y reseñas, chatbot IA n8n + UI/UX chat)
       </div>
     </section>
   );
