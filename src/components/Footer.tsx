@@ -87,7 +87,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
+<<<<<<< HEAD
                   href="https://wa.me/5491234567890"
+=======
+                  href="https://wa.me/34653705275"
+>>>>>>> 560454f (feat: testimonios, webhook en contacto y reseñas, chatbot IA n8n + UI/UX chat)
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
