@@ -422,7 +422,7 @@ const Contact = () => {
           }
           setChatOpen((s) => !s);
         }}
-        className="fixed bottom-6 right-6 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all z-50 bg-yellow-400 hover:bg-yellow-300 text-black border border-yellow-500/50"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all z-50 bg-yellow-400 hover:bg-yellow-300 text-black border border-yellow-500/50"
         aria-label="Abrir asistente"
       >
         {chatOpen ? <X className="w-7 h-7" /> : <Bot className="w-7 h-7" />}
@@ -430,7 +430,7 @@ const Contact = () => {
 
       {/* Chat Panel */}
       {chatOpen && (
-        <div className="fixed bottom-24 right-6 w-[480px] max-h-[82vh] bg-card/95 backdrop-blur border border-border rounded-2xl shadow-2xl z-50 overflow-hidden animate-in fade-in-0 zoom-in-95">
+        <div className="fixed bottom-20 sm:bottom-24 left-3 right-3 sm:left-auto sm:right-6 w-[calc(100vw-1.5rem)] sm:w-[480px] max-h-[75vh] sm:max-h-[82vh] bg-card/95 backdrop-blur border border-border rounded-2xl shadow-2xl z-50 overflow-hidden animate-in fade-in-0 zoom-in-95">
           {/* Header */}
           <div className="flex items-center justify-between px-5 py-4 bg-gradient-to-r from-yellow-400 to-yellow-300 text-black">
             <div className="flex flex-col">
@@ -449,7 +449,7 @@ const Contact = () => {
           </div>
 
           {/* Messages */}
-          <div className="p-5 space-y-3 overflow-y-auto text-[16px] custom-scrollbar" style={{ maxHeight: "66vh" }}>
+          <div className="p-4 sm:p-5 space-y-3 overflow-y-auto text-[15px] sm:text-[16px] custom-scrollbar" style={{ maxHeight: "60vh" }}>
             {messages.length === 0 && (
               <div className="text-muted-foreground">
                 Empieza a chatear. Respuestas breves y claras.
@@ -457,7 +457,7 @@ const Contact = () => {
             )}
             {messages.map((m, i) => (
               <div key={i} className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}>
-                <div className={`px-4 py-3 rounded-2xl max-w-[85%] whitespace-pre-wrap leading-relaxed shadow-sm ${
+                <div className={`px-4 py-3 rounded-2xl max-w-[90%] sm:max-w-[85%] whitespace-pre-wrap leading-relaxed shadow-sm ${
                   m.role === "user" ? "bg-yellow-400 text-black" : "bg-muted text-foreground border border-border"
                 }`}>
                   {m.content}
